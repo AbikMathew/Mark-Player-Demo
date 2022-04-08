@@ -5,7 +5,7 @@ import 'package:mark_player/screens/splash_screen.dart';
 
 import 'provider/theme_provider.dart';
 import 'screens/favorites_screen.dart';
-import 'screens/home_screen.dart';
+import 'screens/home_screen.temp';
 import 'screens/watch_later.dart';
 
 void main() {

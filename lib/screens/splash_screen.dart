@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 
-import 'home_screen.dart';
+import 'home_screen.temp';
 import 'navbar.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -19,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   _navigateToHome() async {
-    await Future.delayed(Duration(milliseconds: 1500), () {});
+    await Future.delayed(Duration(milliseconds: 0), () {});
     Navigator.pushReplacement(
         context, MaterialPageRoute(builder: (context) => customNavbar()));
   }

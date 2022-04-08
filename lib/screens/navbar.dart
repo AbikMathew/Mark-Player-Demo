@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:mark_player/screens/testScreen.temp';
 import '../screens/favorites_screen.dart';
-import '../screens/home_screen.dart';
+import 'home_page.dart';
+import 'home_screen.temp';
 import '../screens/movies_page.dart';
 import '../screens/settings.dart';
 import '../screens/watch_later.dart';
@@ -17,7 +19,9 @@ class _customNavbarState extends State<customNavbar> {
 int _selectedIndex = 0;
 final PageController _pageController = PageController();
   final screens = [
-    homeScreen(),
+  //  homeScreen(),
+    //newHomeScreen(),
+    MyHomePage(title: 'home'),
     favoritesScreen(),
     watchLaterScreen(),
     settingsPage(),
@@ -31,7 +35,9 @@ final PageController _pageController = PageController();
        body: PageView(
         controller: _pageController,
         children: <Widget>[
-          homeScreen(),
+       //   homeScreen(),
+  //  newHomeScreen(),
+     MyHomePage(title: 'home'),
     favoritesScreen(),
     watchLaterScreen(),
     settingsPage(),
